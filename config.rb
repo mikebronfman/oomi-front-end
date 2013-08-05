@@ -21,7 +21,7 @@
 # page "/path/to/file.html", :layout => false
 #
 # With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
+# page "index.html.erb", :layout => :landing
 #
 # A path which all have the same layout
 # with_layout :admin do
@@ -49,7 +49,7 @@
 
 set :css_dir, 'stylesheets'
 
-set :js_dir, 'javascripts'
+set :js_dir, 'javascript'
 
 set :images_dir, 'images'
 

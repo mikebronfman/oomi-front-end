@@ -157,6 +157,15 @@ $include-html-magellan-classes: $include-html-classes !default;
   box-sizing: $type;
 }
 
+// From CSS tricks http://css-tricks.com/perfect-full-page-background-image/
+@mixin background-size($type:cover) {
+  -webkit-background-size:  $type;
+  -moz-background-size:  $type;
+  -o-background-size:  $type;
+  background-size:  $type;
+}
+
+
 // We use this to create equalateral triangles
 @mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) {
   content: "";
