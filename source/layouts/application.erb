@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Dashboard | Oomi</title>
+  <title><%= data.page.title || "Oomi" %> | Oomi</title>
 
   <meta content='How do you manage your collection of devices?' name='description'>
   <meta content='#' property='twitter:image'>
@@ -31,10 +31,16 @@
 
 </head>
 <body id="application">
-
   <%= yield %>
+  
+  <script>
+    document.write('<script src=/assets/javascript/vendor/'
+      + ('__proto__' in {} ? 'zepto' : 'jquery')
+      + '.js><\/script>');
+  </script>
 
-  <script src="assets/javascript/app.js"></script>
+  <script src="assets/javascript/foundation/foundation.js"></script>
+  <script src="assets/javascript/foundation/foundation.reveal.js"></script>
   <script src="assets/javascript/interactions.js"></script>
 </body>
 </html>

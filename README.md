@@ -1,23 +1,25 @@
-Middleman 3 Template for Foundation 4
+Oomi Front-End
 =====================================
 
-This is a [Middleman](http://middlemanapp.com/) project template for [Zurb Foundation 4](http://foundation.zurb.com/) compiled with:
+I basically built a starting point for a front end of a ruby application for Oomi. We're using Foundation 4 as a framework for design, with *some* of the styles from the previous version, at least what I could salvage.
 
-* Middleman 3.0.13
-* Foundation 4.0.9
 
-The Foundation Sass and Javascript come from Zurb's [GitHub repo](https://github.com/zurb/foundation) with project template files from [project/templates](https://github.com/zurb/foundation/tree/master/templates/project).
+#### Tools (read the docs, trust me)
+* Middleman 3.0.13 http://middlemanapp.com/
+* Foundation 4.0.9 http://foundation.zurb.com/
 
-Installation
+
+You need:
+* ruby enviroment
+* LiveReload (optional, fast for development http://livereload.com/)
+
+
+Installation (in the terminal yo)
 ------------
 
-1. ```git clone git://github.com/tehpeh/middleman-foundation-4.git ~/.middleman/foundation-4```
-2. ```middleman init my_new_project --template=foundation-4```
-
-For more infomation see the documentation on Middleman [Project Templates](http://middlemanapp.com/getting-started/).
-
-License
--------
-
-Compiled by [Tim Preston](https://twitter.com/tehpeh/).<br />
-Foundation is Copyright (c) 2011 ZURB, http://www.zurb.com/ (see [MIT-LICENSE.txt](https://github.com/tehpeh/middleman-foundation-4/blob/master/MIT-LICENSE.txt))
+1. ```git clone https://github.com/mikebronfman/oomi-front-end.git```
+2. ```cd oomi-front-end```
+3. ```gem install middleman```
+4. ```bundle exec middleman server```
+5. Visit http://localhost:4567/ or http://0.0.0.0:4567/
+5. Rejoice

@@ -55,7 +55,6 @@
 		h2 {
 			color: white;
 			font-size: 3em;
-			@extend tk-proxima-nova;
 			@include text-shadow(0, 1px, 3px, rgba(0,0,0,0.8));
 		}
 	}

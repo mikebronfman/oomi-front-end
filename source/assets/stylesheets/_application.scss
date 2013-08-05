@@ -1,58 +1,86 @@
 // Landing Page
 
 #application {
+    background-image: url(../images/bg-inset.png);
+    background-color: #f9f9f6;
+	-webkit-font-smoothing: antialiased; 
 
-nav {
-	padding: 1em;
-	background: rgba(255,255,255,0.7);
-	@include inset-shadow;
+	nav {
+		padding: 1em;
+		background: white;
+	    height: 4em;
+	    background: #fff;
+	    position: relative;
+	    width: 100%;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    // above should be user select mixin
+	    z-index: 500;
+	    -webkit-backface-visibility: hidden;
 
-	ul {
-		@include inline-list;
-		text-align: right;
-		float: right;
-		padding: 0;
-		margin: 0;
+		 &:after {
+		 	content: "";
+		    display: table;
+		    clear: both;
+		    display: block;
+		    content: '';
+		    position: absolute;
+		    // above should be replaced with extend clearfix
+
+		    left: 0;
+		    bottom: -4px;
+		    width: 100%;
+		    height: 4px;
+		    z-index: 501;
+		    background-image: url(../images/squiggles.png);
+		    background-position: 0 -36px;
+		    background-color: transparent;
+		    background-repeat: repeat-x;
+		}
+
+		ul {
+			@include inline-list;
+			text-align: right;
+			float: right;
+			padding: 0;
+			margin: 0; 
+
+			li {
+				margin-top: 3px;
+				strong { display: inline-block; }
+				
+				a {
+					font-weight: 600;
+					&:hover { color: darken($primary-color, 20%); }
+				}
+
+				a.button {
+					@include box-shadow(0, -2px, 0, rgba(0,0,0,0.1) inset);
+					@include button-size($button-sml);
+					@include button-style;
+					@include radius;
+					font-size: 0.9em;
+					top: -2px;
+				}
+			}
+		}
+
+		h1 {
+			@include hide-text;
+			background: url("../images/landing-logo.png");
+			height: 50px;
+			width: 310px;
+			background-size: 30%;
+			background-repeat: no-repeat;
+			margin: 0;
+			padding: 0;
+		}
 	}
-
-	h1 {
-		@include hide-text;
-		background: url("../images/landing-logo.png");
-		height: 50px;
-		width: 310px;
-		background-size: 35%;
-		background-repeat: no-repeat;
-		margin: 0;
-		padding: 0;
-	}
-}
-
-
-
-
-
-header {
-	height: 30em;
-	@include background-size;
-
-
-	p {
-		font-size: 1.4em;
-		color: $secondary-color;
-		@include text-shadow(0, -1px, 0px, rgba(255,255,255,0.7));
-	}
-
-	h2 {
-		color: white;
-		font-size: 3em;
-		@extend tk-proxima-nova;
-		@include text-shadow(0, 1px, 3px, rgba(0,0,0,0.8));
-	}
-}
 
 	section {
-		background: rgba(255,255,255,0.8);
-		@include inset-shadow;
-		@include box-shadow(0px, 0px, 15px, rgba(0,0,0,0.2));
+		margin-top: 2em;
 	}
 }
+

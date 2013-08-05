@@ -1,3 +1,5 @@
+$(document).foundation();
+
 $( document ).ready(function() {
 
 	$("#landing a.login").click(function ( event ) {
@@ -5,5 +7,5 @@ $( document ).ready(function() {
 	  $(this).hide();
 	  $("nav form").fadeIn();
 	});
-	
+
 });
