@@ -1,18 +1,15 @@
 // Landing Page
 
 #landing {
-
 	header {
 		height: 30em;
 		background: url(../images/fullBg.png) no-repeat center center; 
-		@include background-size;
 		text-align: center;
-
+		@include background-size;
 
 		nav {
 			margin-bottom: 3em;
 			padding: 1em;
-			//background: rgba(255,255,255,0.7);
 			@include inset-shadow;
 
 			ul {
@@ -36,11 +33,14 @@
 					&:hover { opacity: 1; }
 				}
 			}
+
+			form, input, a  { margin-bottom: 0; }
 		}
 
 		p {
 			font-size: 1.4em;
 			color: $secondary-color;
+			@include text-shadow(0, -1px, 0px, rgba(255,255,255,0.7));
 		}
 
 		h1 {
