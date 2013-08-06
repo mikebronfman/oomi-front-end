@@ -26,4 +26,6 @@ Installation (in the terminal yo)
 
 
 
-**Startup Engineering course** https://www.coursera.org/course/startup
+**Startup Engineering course** - https://www.coursera.org/course/startup
+
+**for pushing to heroku** - https://github.com/indirect/middleman-heroku-static-app
