@@ -1,5 +1,3 @@
-$(document).foundation();
-
 $( document ).ready(function() {
 
 	$("#landing a.login").click(function ( event ) {

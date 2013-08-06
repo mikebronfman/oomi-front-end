@@ -24,3 +24,4 @@
 // require foundation/foundation.tooltips
 // require foundation/foundation.topbar
 
+$(document).foundation();

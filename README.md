@@ -1,7 +1,7 @@
 Oomi Front-End
 =====================================
 
-I basically built a starting point for a front end of a ruby application for Oomi. We're using Foundation 4 as a framework for design, with *some* of the styles from the previous version, at least what I could salvage.
+I basically built a starting point for a front end of a ruby application for Oomi. It's pretty cool. We're using Foundation 4 as a framework for design, with *some* of the styles from the previous version, at least what I could salvage.
 
 
 #### Tools (read the docs, trust me)

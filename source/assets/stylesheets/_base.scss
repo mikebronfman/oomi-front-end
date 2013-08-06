@@ -1,6 +1,6 @@
 // Base
 
-* {  background: rgba(255,0,0,0.1); }
+// * {  background: rgba(255,0,0,0.1); }
 
 @mixin hide-text{
     overflow:hidden;
@@ -26,4 +26,10 @@
   -ms-text-shadow: $horizOffset $vertOffset $blur $color; /* IE 10+ */
   -o-text-shadow: $horizOffset $vertOffset $blur $color;
   text-shadow: $horizOffset $vertOffset $blur $color;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
 }

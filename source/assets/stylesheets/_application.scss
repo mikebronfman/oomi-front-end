@@ -1,7 +1,7 @@
 // Landing Page
 
 #application {
-    background-image: url(../images/bg-inset.png);
+    background-image: url(../images/bg.png);
     background-color: #f9f9f6;
 	-webkit-font-smoothing: antialiased; 
 
@@ -81,6 +81,35 @@
 
 	section {
 		margin-top: 2em;
+
+		.sidebar {
+			ul {
+				margin-top: 2em;
+				&:first-child { margin-top: 0px; }
+			
+				li>a {
+					display: block;
+					@include box-sizing;
+					height: 33px;
+					line-height: 35px;
+					padding: 0 10px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					font-weight: 700;
+				}
+				.active>a {
+				    color: #535251;
+				    cursor: default;
+				    background-image: url(../images/noise.png);
+				    background-color: #f0f0ec;
+				    border: 1px solid #e0e0d9;
+				    margin: 0 -1px;
+				    line-height: 33px;
+				    @include border-radius(4px);
+	    		}
+			}
+		}
 	}
 }
 
